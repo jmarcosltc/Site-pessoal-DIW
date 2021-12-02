@@ -110,6 +110,7 @@ function reqUserInfo(username) {
     for (let j in data) {
 
         if (j < 7) {
+
             let ul = document.getElementById('followers');
 
             let li = document.createElement('li');
@@ -126,6 +127,7 @@ function reqUserInfo(username) {
                 `;
 
                 ul.appendChild(li);
+
             }
         }
     }

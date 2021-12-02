@@ -13,9 +13,8 @@ function pesquisaGH() {
             const data = JSON.parse(this.response);
             console.log(data)
 
-            window.location.href="search.html"
             
-            for (let l in data) {
+            for (let l in data.items) {
 
                 if (l < 10) {
                     console.log(l)
@@ -26,9 +25,9 @@ function pesquisaGH() {
                     li.classList.add('list-group-item')
         
                         li.innerHTML = `
-                            <img src="${data[j].avatar_url}" class="card-img-top">
-                            <p><strong>${data[j].login}</strong></p>
-                            <p><strong>Link da página do usuário:</strong> <a href="${data[j].html_url}">${data[j].html_url}</a></p>
+                            <img src="${data.items[l].avatar_url}" class="card-img-top">
+                            <p><strong>${data.items[l].login}</strong></p>
+                            <p><strong>Link da página do usuário:</strong> <a href="${data.items[l].html_url}">${data.items[l].html_url}</a></p>
                         `;
         
                         ul.appendChild(li);
