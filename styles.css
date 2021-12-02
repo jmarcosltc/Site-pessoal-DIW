@@ -118,6 +118,21 @@ form {
         font-family: "Poppins", sans-serif;
     }
 
+    #followers p:first-of-type {
+        font-size: 30px;
+        justify-content: center;
+        margin-bottom: 20px;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+    }
+
+    #followers p {
+        justify-content: center;
+        margin-bottom: 20px;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+    }
+
 }
 
 @media (min-width: 700px) {
@@ -129,6 +144,24 @@ form {
 
     #user img {
         display: block;
+        max-width: 200px;
+        max-height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #followers img {
+        display: block;
+        max-width: 200px;
+        max-height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #followers p:first-of-type {
+        display: block;
+        justify-content: center;
+        text-align: center;
         max-width: 200px;
         max-height: 200px;
         margin-left: auto;
