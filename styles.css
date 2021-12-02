@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+/* NAV */
+
+header {
+    background: rgb(51,20,110);
+    background: linear-gradient(180deg, rgba(51,20,110,1) 0%, rgba(49,55,158,1) 98%);
+}
+
+
+#navigation {
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+#navigation li {
+    position: absolute;
+    display: inline-block;
+    font-weight: 700;
+    justify-content: space-between;
+    padding-left: 55px;
+    margin-bottom: 0px;
+}
+
+#navigation li a {
+    color: white;
+}
+
+form {
+    display: flex;
+    justify-content: right;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
+
+}
+
+#btn {
+    margin-left: 30px;
+}
+
+@media (max-width: 600px) {
+    #btn {
+        display: flex;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        padding: 10px;
+        margin-right: 40%;
+    }
+}
+
+/* NAV */
+
+/* BODY */
+
+#title {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+
+#user h1 {
+    margin-top: 30px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+#repos {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#repos h1 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+#followers h1 {
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/* BODY */
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+
+    #navigation li {
+        position: relative !important;
+        display: inline-block;
+        font-weight: 700;
+        justify-content: space-between;
+        padding-left: 0px;
+        margin-bottom: 15px;
+    }
+
+    #user h1 {
+        margin-top: 20px;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+    }
+
+    #repos h1 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+    }
+
+    #followers h1 {
+        margin-bottom: 20px;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+    }
+
+}
+
+@media (min-width: 700px) {
+
+    #user h1 {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    #user img {
+        display: block;
+        max-width: 200px;
+        max-height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/* MEDIA QUERIES */
