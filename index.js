@@ -54,11 +54,7 @@ function reqUserRep(username) {
     xhr.onload = function() {
     
         
-        const data = JSON.parse(this.response);   
-        
-        
-
-       
+        const data = JSON.parse(this.response);  
 
 
         for (let i in data) {
@@ -72,8 +68,8 @@ function reqUserRep(username) {
                 li.classList.add('list-group-item')
 
                 li.innerHTML = (`
-                    <p><strong>Repo:</strong> ${data[i].name}</p>
-                    <p><strong>Description:</strong> ${data[i].description}</p>
+                    <p><strong>Repositório:</strong> ${data[i].name}</p>
+                    <p><strong>Descrição:</strong> ${data[i].description}</p>
                     <p><strong>URL:</strong> <a href="${data[i].html_url}">${data[i].html_url}</a></p>
                 `);
 
@@ -91,7 +87,7 @@ function reqUserRep(username) {
 
 }
 
-function reqUserInfo(username) {
+function reqUserFollowing(username) {
 
     const xhr = new XMLHttpRequest();
 
@@ -117,16 +113,13 @@ function reqUserInfo(username) {
 
             li.classList.add('list-group-item')
 
+            li.innerHTML = `
+                <img src="${data[j].avatar_url}" class="card-img-top">
+                <p><strong>${data[j].login}</strong></p>
+                <p><strong>Link da página do usuário:</strong> <a href="${data[j].html_url}">${data[j].html_url}</a></p>
+            `;
 
-
-
-                li.innerHTML = `
-                    <img src="${data[j].avatar_url}" class="card-img-top">
-                    <p><strong>${data[j].login}</strong></p>
-                    <p><strong>Link da página do usuário:</strong> <a href="${data[j].html_url}">${data[j].html_url}</a></p>
-                `;
-
-                ul.appendChild(li);
+            ul.appendChild(li);
 
             }
         }
@@ -139,5 +132,5 @@ function reqUserInfo(username) {
 
 reqUser('jmarcosltc');
 reqUserRep('jmarcosltc');
-reqUserInfo('jmarcosltc');
+reqUserFollowing('jmarcosltc');
 
