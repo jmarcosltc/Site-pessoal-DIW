@@ -5,7 +5,6 @@ function pesquisaGH() {
     document.getElementById("Search").click()
     
 
-
     form.addEventListener('submit',function(i){
         i.preventDefault()
         
@@ -17,6 +16,7 @@ function pesquisaGH() {
             console.log(data)
 
             
+
             for (let l in data.items) {
 
                 if (l < 10) {
