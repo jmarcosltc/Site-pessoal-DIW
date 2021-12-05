@@ -49,7 +49,7 @@ form {
 }
 
 #btn2 {
-    margin-right: 50px;
+    margin-right: 0px;
     justify-content: space-between;
     font-weight: bold;
     background-color: white;
@@ -175,12 +175,14 @@ form {
     }
 
     #btn2 {
-        display: block;
+        display: flex;
         justify-content: center;
         text-align: center;
         top: 50%;
         float: left;
         padding: 10px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     #navigation li {
